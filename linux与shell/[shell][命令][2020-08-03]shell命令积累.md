@@ -25,5 +25,8 @@ done
 ${string//substring/replacement}
 
 注：
-1、其中的string为
+1、其中的string为变量名，不用加${}，即：
+var_sring="hello"
+${var_string//l/a}
+
 ```
