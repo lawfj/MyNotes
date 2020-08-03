@@ -13,7 +13,7 @@ done < filename
 ```
 ### 使用for有问题，待研究
 ```
-// 文件遇到分隔符就会换行，并不是遇到换行符才
+// 文件中的分隔符被命令认定为换行，并不是遇到换行符才换行，所以有问题
 for line in `cat filename`
 do
  echo $line
