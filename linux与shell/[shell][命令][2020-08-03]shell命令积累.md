@@ -11,4 +11,11 @@ do
  echo $line
 done < filename
 ```
-### 
+### 使用for有问题，待研究
+```
+// 文件遇到分隔符就会换行，并不是遇到换行符才
+for line in `cat filename`
+do
+ echo $line
+done
+```
