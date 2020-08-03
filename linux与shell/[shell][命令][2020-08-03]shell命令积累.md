@@ -19,3 +19,11 @@ do
  echo $line
 done
 ```
+
+## 替换变量中的指定字符串
+```
+${string//substring/replacement}
+
+注：
+1、其中的string为
+```
