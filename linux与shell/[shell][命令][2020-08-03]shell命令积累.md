@@ -36,4 +36,8 @@ sed -i '$d' filename
 ## 获取文件指定行或指定行区间（某几行）的内容
 ```
 sed -n '123p' filename
+
+
 ```
+
+
