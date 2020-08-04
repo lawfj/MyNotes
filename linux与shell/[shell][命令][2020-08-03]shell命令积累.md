@@ -41,5 +41,9 @@ sed -n '123,125p' filename //获取123~124行的数据，不包括125行！
 grep -A10 -B5 'hello' filename //匹配有字符串'hello'的行，并往上5行，往下10行
 
 ```
-
+## 显示最后几行
+```
+tail -n filename //打印最后10行
+tail -n 15 filename //打印最后15行
+```
 
