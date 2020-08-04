@@ -30,4 +30,7 @@ var_sring="hello"
 echo ${var_string//l/a}  //输出heaao
 ```
 ## 去掉最后一行
-sed -i '$d'
+```
+sed -i '$d' filename
+```
+## 获取指定行或指定行区间（）
