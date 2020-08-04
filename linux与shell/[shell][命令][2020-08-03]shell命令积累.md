@@ -33,4 +33,7 @@ echo ${var_string//l/a}  //输出heaao
 ```
 sed -i '$d' filename
 ```
-## 获取指定行或指定行区间（）
+## 获取文件指定行或指定行区间（某几行）的内容
+```
+sed -n '123p' filename
+```
