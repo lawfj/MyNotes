@@ -38,7 +38,7 @@ sed -i '$d' filename
 sed -n '123p' filename //获取第123行的数据
 
 sed -n '123,125p' filename //获取123~124行的数据，不包括125行！
-grep -A10 -B5 'hello' filename //
+grep -A10 -B5 'hello' filename //匹配有字符串'hello'的行，并往上5行，往下10行
 
 ```
 
