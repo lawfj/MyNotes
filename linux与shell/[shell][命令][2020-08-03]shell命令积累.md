@@ -43,7 +43,7 @@ grep -A10 -B5 'hello' filename //匹配有字符串'hello'的行，并往上5行
 ```
 ## 显示最后几行
 ```
-tail -n filename //打印最后10行
+tail filename //打印最后10行
 tail -n 15 filename //打印最后15行
 ```
 
