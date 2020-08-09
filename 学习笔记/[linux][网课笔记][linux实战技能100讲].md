@@ -92,7 +92,11 @@ dr-xr-xr-x. 20 root root  263 Aug  9 14:20 ../
 -rw-------   1 root root 4860 Aug  7 18:19 .bash_history
 -rw-r--r--.  1 root root   18 Dec 29  2013 .bash_logout
 -rw-r--r--.  1 root root  176 Dec 29  2013 .bash_profile
-|权限     
+-rw-r--r--.  1 root root  176 Dec 29  2013 .bashrc
+drwx------   4 root root   33 Aug  6 17:24 .cache/
+-rw-r--r--.  1 root root  100 Dec 29  2013 .cshrc
+drwxr-xr-x   4 root root   28 Aug  6 17:36 go/
+|权限|文件数|
 ```
 切换用户
 su - mysql
