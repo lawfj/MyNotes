@@ -21,3 +21,7 @@ help：内部命令使用help帮助
 ```
 help cd
 ```
+外部命令获取help帮助
+```
+ls --help
+```
