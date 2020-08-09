@@ -301,7 +301,7 @@ ftpuser:$6$2reS2mo/$C8JYmOTbWlLgmM7HVHMd6Sqz32O/WJIVra/6FmeuE2X7JDo64ghslGvefA7s
 /etc/group
 
 ftpuser:x:1002:
-用户名称:::
+用户名称:组是否需要密码验证:gid:除了同名用户外还有哪些用户
 ```
 ## 23 | 文件与目录权限的表示方法
 ## 24 | 文件权限的修改方法和数字表示方法
