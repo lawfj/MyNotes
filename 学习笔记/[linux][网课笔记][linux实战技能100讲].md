@@ -175,13 +175,14 @@ tar -zcf file.tar.gz file1
 tar -jcf file.tar.bz2 file1
 tar -zcvf file.tar.gz file1 file2 #将file1和file2打包压缩到file.tar.gz
 tar -jcvf file.tar.bz2 file1
-tar -C /tmp -zxcf file.tar.gz file1
+tar -zxcf file.tar.gz -C /tmp/file* #tar不加参数只能打包当前目录的文件，要用-C指定其他目录的文件
 解包
 tar -xf file.tar
 tar -zxf file.tar.gz
 tar -jxf file.tar.bz2
 tar -zxvf file.tar.gz
 tar -jxvf file.tar.bz2
+tar -zxcf file.tar.gz -C /tmp/file*
 下面两个格式为了方面在网络上进行传播，进行了简写而已
 .tgz=.tar.gz
 .tbz2=tar.bz2
