@@ -270,6 +270,9 @@ root授权user1重启命令权限
 ```
 root执行visudo，在打开的文件中，到最下方添加：
 user1 ALL=/sbin/shutdown -c
+
+切换到user1测试一下语句既可
+sudo /sbin/shutdown -c
 ```
 ## 22 | 用户和用户组的配置文件介绍
 ## 23 | 文件与目录权限的表示方法
