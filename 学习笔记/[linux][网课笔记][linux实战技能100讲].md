@@ -333,8 +333,8 @@ chmod  u+x 文件or文件夹
 chmod +x 文件or文件夹
 
 u g o：user group other
-u+x
-g+x
+u+x	u=rwx
+g+x	g-r
 o+x
 ```
 ```
