@@ -16,3 +16,4 @@ The table below shows the section numbers of the manual followed by the types of
 9   Kernel routines [Non standard]
 
 ```
+help：内部命令使用help
