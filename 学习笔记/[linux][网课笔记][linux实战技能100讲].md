@@ -284,6 +284,7 @@ sudo /sbin/shutdown -c
 ```
 /etc/passwd
 
+ftpuser:x:1002:1002::/home/ftpuser:/bin/bash
 
 ```
 
