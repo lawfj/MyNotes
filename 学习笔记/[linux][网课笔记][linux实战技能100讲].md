@@ -264,7 +264,10 @@ exit或ctrl+d退出当前用户登录
 • visudo 设置需要使⽤ sudo 的⽤户（组）
 
 root授权user1重启命令权限
-user1
+```
+root执行visudo，在打开的文件中，到最下方添加：
+user1 ALL=/sbin/shutdown -c
+```
 ## 22 | 用户和用户组的配置文件介绍
 ## 23 | 文件与目录权限的表示方法
 ## 24 | 文件权限的修改方法和数字表示方法
