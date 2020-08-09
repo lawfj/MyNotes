@@ -96,7 +96,7 @@ dr-xr-xr-x. 20 root root  263 Aug  9 14:20 ../
 drwx------   4 root root   33 Aug  6 17:24 .cache/
 -rw-r--r--.  1 root root  100 Dec 29  2013 .cshrc
 drwxr-xr-x   4 root root   28 Aug  6 17:36 go/
-|权限|文件数|
+|权限|文件数|属主|属组|大小(KB)|最近修改时间|文件名
 ```
 切换用户
 su - mysql
