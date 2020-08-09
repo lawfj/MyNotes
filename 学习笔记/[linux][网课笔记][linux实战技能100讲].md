@@ -203,7 +203,13 @@ passwd 修改⽤户密码
 usermod 修改⽤户属性
 chage 修改⽤户属性
 id #查看当前用户的信息
-id 用户名 
+id 用户名 #查看对应用户的信息
+```
+[root@10-255-0-194 ~]# id
+uid=0(root) gid=0(root) groups=0(root)
+[root@10-255-0-194 ~]# id ftpuser
+uid=1002(ftpuser) gid=1002(ftpuser) groups=1002(ftpuser)
+```
 ## 21 | su和sudo命令的区别和使用方法
 ## 22 | 用户和用户组的配置文件介绍
 ## 23 | 文件与目录权限的表示方法
