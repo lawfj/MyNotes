@@ -72,6 +72,7 @@ ls 查看当前⽬录下的⽂件
 ```
 ls -alF
 ls -lFR
+ls /root
 ls 
 ```
 ## 10 | 详解ls命令
