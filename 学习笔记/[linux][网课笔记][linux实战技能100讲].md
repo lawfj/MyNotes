@@ -244,7 +244,9 @@ drwx------   2 dc2-user dc2-user  62 Dec 11  2019 dc2-user/
 drwx------   3 ftpuser  ftpuser   73 Jul 29 18:05 ftpuser/
 drwx------   2     1003     1003  62 Aug  9 16:04 user1/  <---可以看到，这个目录的属主和属组为uid，变成了无主文件，除了root用户谁都无法访问
 ```
-usermod -d /
+usermod -d /home/w1 w #修改w用户的家目录为/home/w1
+change #修改用户的密码过期时间
+
 ## 21 | su和sudo命令的区别和使用方法
 ## 22 | 用户和用户组的配置文件介绍
 ## 23 | 文件与目录权限的表示方法
