@@ -1,4 +1,5 @@
 # 第二章：系统操作篇
+## 万能的帮助命令：man、help、info
 man：有问题找男人。
 man ls
 man 7 man
@@ -40,4 +41,4 @@ ftp is /usr/bin/ftp
 
 Man和info就像两个集合，它们有一个交集部分，但与man相比，info工具可显示更完整的最新的GNU工具信息。若man页包含的某个工具的概要信息在info中也有介绍，那么man页中会有“请参考info页更详细内容”的字样。通常情况下，man工具显示的非GNU工具的信息是唯一的，而info工具显示的非GNU工具的信息是man页内容的副本补充。
 Made by linusflow
-#
+## 初识
