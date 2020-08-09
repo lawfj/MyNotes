@@ -298,7 +298,10 @@ ftpuser:$6$2reS2mo/$C8JYmOTbWlLgmM7HVHMd6Sqz32O/WJIVra/6FmeuE2X7JDo64ghslGvefA7s
 注：即使是相同的密码，密码密文也是不一样的，这样别人就不会通过密文发现用户的密码是一样的
 ```
 ```
-/etc
+/etc/group
+
+ftpuser:x:1002:
+用户名称:::
 ```
 ## 23 | 文件与目录权限的表示方法
 ## 24 | 文件权限的修改方法和数字表示方法
