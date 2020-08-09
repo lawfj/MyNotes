@@ -160,8 +160,8 @@ more、less命令，分页显示
 ## 15 | 打包压缩和解压缩
 最早的 Linux 备份介质是磁带，使⽤的命令是 tar
 可以打包后的磁带⽂件进⾏压缩储存，压缩的命令是 gzip 和 bzip2
-经常使⽤的扩展名是 .tar.gz .tar.bz2 .tgz --->bz2因为压缩
-
+经常使⽤的扩展名是 .tar.gz .tar.bz2 .tgz
+bz2压缩率大，但速度慢。gz压缩没前者厉害，但速度快
 ### tar 打包命令
 • 常⽤参数（注，可以不加-号）
 • c 打包
@@ -171,9 +171,11 @@ more、less命令，分页显示
 打包
 tar -cf file.tar
 tar -zcf file.tar.gz
+tar -zxvf fil.tar.gz
 解包
 tar -xf file.tar
 tar -zxf file.tar.gz
+tar
 ## 16 | Vim的四种模式
 ## 17 | Vim的正常模式
 ## 18 | Vim的命令模式
