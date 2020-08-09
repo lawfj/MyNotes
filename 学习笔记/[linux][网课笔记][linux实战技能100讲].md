@@ -361,7 +361,9 @@ drwxrwxrwt. 9 root root 228 Aug  9 16:33 /tmp
 ```
 在原先的数字前添4，可以添加SUID权限
 chmod 4755 /tmp/test1
-
+[root@10-255-0-194 tmp]# chmod 4544 test1 
+[root@10-255-0-194 tmp]# ls -l test1
+-r-sr--r-- 1 root root 0 Aug  9 17:42 test1
 ```
 # 第三章：系统管理篇 (29讲)
 ## 26 | 网络管理
