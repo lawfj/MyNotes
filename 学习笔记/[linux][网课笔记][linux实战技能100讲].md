@@ -286,8 +286,8 @@ sudo /sbin/shutdown -c
 
 ftpuser:x:1002:1002::/home/ftpuser:/bin/bash
 用户名称:是否使用密码进行验证:用户id(uid):用户组id(gid):备注:家目录:用户登录的命令解释器
-最后一个有/sbin/nologin，代表不给登录终端
-
+最后一个有/sbin/nologin，代表不给登录终端。
+添加用户的另一个方法就是按照格式在/etc/passwd中添加用户
 ```
 
 ## 23 | 文件与目录权限的表示方法
