@@ -182,7 +182,7 @@ tar -zxf file.tar.gz
 tar -jxf file.tar.bz2
 tar -zxvf file.tar.gz
 tar -jxvf file.tar.bz2
-tar -zxcf file.tar.gz -C /tmp/file*
+tar -zxvf file.tar.gz -C /tmp/file/ #将file.tar.gz解压到/tmp/file/文件夹下。不加-C则解压到当前目录
 下面两个格式为了方面在网络上进行传播，进行了简写而已
 .tgz=.tar.gz
 .tbz2=tar.bz2
