@@ -172,7 +172,7 @@ more、less命令，分页显示
 tar -cf file.tar
 tar -zcf file.tar.gz
 解包
-tar -xcf file.tar
+tar -xf file.tar
 tar -zxf file.tar.gz
 ## 16 | Vim的四种模式
 ## 17 | Vim的正常模式
