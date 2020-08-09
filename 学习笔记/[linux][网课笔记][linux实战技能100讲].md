@@ -242,7 +242,7 @@ dr-xr-xr-x. 20 root     root     263 Aug  9 16:05 ../
 drwx------   3 centos   centos    74 Jul 29 16:38 centos/
 drwx------   2 dc2-user dc2-user  62 Dec 11  2019 dc2-user/
 drwx------   3 ftpuser  ftpuser   73 Jul 29 18:05 ftpuser/
-drwx------   2     1003     1003  62 Aug  9 16:04 user1/  <---可以看到，这个目录的属主和属组为uid，变成了无主文件，除了
+drwx------   2     1003     1003  62 Aug  9 16:04 user1/  <---可以看到，这个目录的属主和属组为uid，变成了无主文件，除了root用户谁都无法访问
 ```
 ## 21 | su和sudo命令的区别和使用方法
 ## 22 | 用户和用户组的配置文件介绍
