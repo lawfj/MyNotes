@@ -333,8 +333,8 @@ chmod  u+x 文件or文件夹
 chmod +x 文件or文件夹
 ```
 ```
-chown mysql:mysql file1
-chown :mysql file1
+chown mysql:mysql 文件or文件夹
+chown :mysql 文件or文件夹 #只修改属组，不修改属主
 ```
 ## 25 | 权限管理以及文件的特殊权限
 # 第三章：系统管理篇 (29讲)
