@@ -215,7 +215,10 @@ uid=1002(ftpuser) gid=1002(ftpuser) groups=1002(ftpuser)
 
 useradd没有指定用户组的话，会默认创建同名用户组
 只有root用户有创建用户的权限，普通用户不行
-root用户可以用passwd修改自己或者其他用户的密码，
+root用户可以用passwd修改自己或者其他用户的密码，普通用户只能修改自己的密码
+
+userdel
+userdel 用户名 #删除用户
 ## 21 | su和sudo命令的区别和使用方法
 ## 22 | 用户和用户组的配置文件介绍
 ## 23 | 文件与目录权限的表示方法
