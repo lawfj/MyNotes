@@ -292,7 +292,9 @@ ftpuser:x:1002:1002::/home/ftpuser:/bin/bash
 ```
 /etc/shawod
 
-
+ftpuser:$6$2reS2mo/$C8JYmOTbWlLgmM7HVHMd6Sqz32O/WJIVra/6FmeuE2X7JDo64ghslGvefA7sxzreO1g4YcE6zTDMm0jMF8Xu8/:18472:0:99999:7:::
+只需要知道前两个字段：
+用户名称:密码
 ```
 
 ## 23 | 文件与目录权限的表示方法
