@@ -75,6 +75,15 @@ ls -lFR
 ls #显示当前目录下的文件
 ls p* #使用通配符，显示当前目录下以P开头的文件
 ls a b #显示多个目录下的文件
+[root@10-255-0-194 ~]# ls / /root
+/:
+app  bin  boot  dev  etc  home  lib  lib64  libexec  media  mnt  opt  proc  root  run  sbin  share  srv  sys  tmp  usr  var
+
+/root:
+–a  go  –p
+
+
+
 ```
 切换用户
 su - mysql
