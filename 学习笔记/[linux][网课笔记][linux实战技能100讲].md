@@ -312,7 +312,11 @@ ftpuser:x:1002:
 • l 符号链接
 • f 命名管道
 • s 套接字⽂件
-### 
+### 权限
+文件权限
+![文件权限](https://raw.githubusercontent.com/lawfj/MyNotesPic/master/MyNotes/2020/08/09/1596964453437-1596964453439.png)
+文件夹权限
+![title](https://raw.githubusercontent.com/lawfj/MyNotesPic/master/MyNotes/2020/08/09/1596964489343-1596964489346.png)
 注：权限后如果有个点，点表示这个系统目前使用了selinux这个功能
 一个用户可以属于多个组，请问查看文件权限权限时，属主属组显示哪个？用户组是可以分主要组和其他组的，显示主要组
 
