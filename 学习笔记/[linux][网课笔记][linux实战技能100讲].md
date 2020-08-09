@@ -72,6 +72,7 @@ ls 查看当前⽬录下的⽂件
 ```
 ls -alF
 ls -lFR
+ls -r
 ls #显示当前目录下的文件
 ls p* #使用通配符，显示当前目录下以P开头的文件
 ls a b #显示多个目录下的文件
@@ -97,6 +98,8 @@ drwx------   4 root root   33 Aug  6 17:24 .cache/
 -rw-r--r--.  1 root root  100 Dec 29  2013 .cshrc
 drwxr-xr-x   4 root root   28 Aug  6 17:36 go/
 |权限|文件数|属主|属组|大小(KB)|最近修改时间|文件名
+
+.开头的文件是隐藏文件，要用-a参数才会显示
 ```
 切换用户
 su - mysql
