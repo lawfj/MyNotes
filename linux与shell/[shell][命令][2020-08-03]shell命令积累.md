@@ -50,5 +50,5 @@ tail -n 15 filename //打印最后15行
 ```
 clear命令
 
-ctrl + 
+ctrl + l
 ```
