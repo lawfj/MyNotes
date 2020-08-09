@@ -348,6 +348,13 @@ chown :mysql 文件or文件夹 #只修改属组，不修改属主
 SUID
 SGID
 SBIT
+```
+/etc/passwd是SUID权限
+
+/tmp目录是SGID权限
+[root@10-255-0-194 tmp]# ls -ld /tmp
+drwxrwxrwt. 9 root root 228 Aug  9 16:33 /tmp
+```
 # 第三章：系统管理篇 (29讲)
 ## 26 | 网络管理
 ## 27 | 查看网络配置
