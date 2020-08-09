@@ -1,5 +1,5 @@
 # 第二章：系统操作篇
-man：有问题找男人。man是查看linux自带命令的工具，自带命令没有实体，说人话就是在linux中找不到这些命令对应的文件。
+man：有问题找男人。
 man ls
 man 7 man
 ```
@@ -17,4 +17,7 @@ The table below shows the section numbers of the manual followed by the types of
 
 ```
 help：内部命令使用help帮助
-内部命令：shell（命令解释器）自带的命令成为内部命令，其他的是外部命令。
+内部命令：shell（命令解释器）自带的命令成为内部命令，其他的是外部命令。内部命令没有实体，说人话就是在linux中找不到这些命令对应的文件。
+```
+help cd
+```
