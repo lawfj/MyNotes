@@ -175,7 +175,7 @@ tar -zcf file.tar.gz file1
 tar -jcf file.tar.bz2 file1
 tar -zcvf file.tar.gz file1 file2 #将file1和file2打包压缩到file.tar.gz
 tar -jcvf file.tar.bz2 file1
-tar -zxcf gile.tar.gz
+tar -C /tmp -zxcf file.tar.gz file1
 解包
 tar -xf file.tar
 tar -zxf file.tar.gz
