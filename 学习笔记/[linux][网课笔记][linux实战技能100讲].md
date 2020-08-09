@@ -366,6 +366,10 @@ chmod 4755 /tmp/test1
 -r-sr--r-- 1 root root 0 Aug  9 17:42 test1
 
 添加SGID
+chmod 1544 test1
+[root@10-255-0-194 tmp]# chmod 1544 test1
+[root@10-255-0-194 tmp]# ls -ld test1
+-r-xr--r-T 1 root root 0 Aug  9 17:44 test1
 
 ```
 # 第三章：系统管理篇 (29讲)
