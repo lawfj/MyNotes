@@ -344,7 +344,10 @@ chown :mysql 文件or文件夹 #只修改属组，不修改属主
 ```
 ## 25 | 权限管理以及文件的特殊权限
 特殊权限
-
+![title](https://raw.githubusercontent.com/lawfj/MyNotesPic/master/MyNotes/2020/08/09/1596965593464-1596965593466.png)
+SUID
+SGID
+SBIT
 # 第三章：系统管理篇 (29讲)
 ## 26 | 网络管理
 ## 27 | 查看网络配置
