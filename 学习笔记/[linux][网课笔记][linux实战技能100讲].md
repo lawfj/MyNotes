@@ -213,7 +213,8 @@ uid=1002(ftpuser) gid=1002(ftpuser) groups=1002(ftpuser)
 ### /etc/passwd和/etc/shadow
 前者是用户信息，后者是密码信息
 
-useradd没有指定用户组的话
+useradd没有指定用户组的话，会默认创建同名用户组
+只有root用户有创建用户的权限，普通
 ## 21 | su和sudo命令的区别和使用方法
 ## 22 | 用户和用户组的配置文件介绍
 ## 23 | 文件与目录权限的表示方法
