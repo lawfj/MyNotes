@@ -331,11 +331,17 @@ chgrp 可单独设置属组，不常用
 chmod 777 文件or文件夹
 chmod  u+x 文件or文件夹
 chmod +x 文件or文件夹
+
+u g o：user group other
+u+x
+g+x
+o+x
 ```
 ```
 chown mysql:mysql 文件or文件夹
 chown :mysql 文件or文件夹 #只修改属组，不修改属主
 ```
+
 ## 25 | 权限管理以及文件的特殊权限
 # 第三章：系统管理篇 (29讲)
 ## 26 | 网络管理
