@@ -81,8 +81,9 @@ app  bin  boot  dev  etc  home  lib  lib64  libexec  media  mnt  opt  proc  root
 
 /root:
 –a  go  –p
-
-
+```
+输出解释
+```
 
 ```
 切换用户
