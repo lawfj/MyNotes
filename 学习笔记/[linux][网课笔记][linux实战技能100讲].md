@@ -285,7 +285,8 @@ sudo /sbin/shutdown -c
 /etc/passwd
 
 ftpuser:x:1002:1002::/home/ftpuser:/bin/bash
-用户名称:是否使用密码进行验证:用户id(uid):用户组id(gid):备注:家目录:
+用户名称:是否使用密码进行验证:用户id(uid):用户组id(gid):备注:家目录:用户登录的命令解释器
+最后一个有/sbin/nologin，代表不给登录终端
 
 ```
 
