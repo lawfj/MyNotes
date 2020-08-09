@@ -307,7 +307,7 @@ ftpuser:x:1002:
 ![title](https://raw.githubusercontent.com/lawfj/MyNotesPic/master/MyNotes/2020/08/09/1596964066067-1596964066069.png)
 • - 普通⽂件
 • d ⽬录⽂件
-• b 块特殊⽂件
+• b 块特殊⽂件		设备，比如u盘
 • c 字符特殊⽂件
 • l 符号链接
 • f 命名管道
