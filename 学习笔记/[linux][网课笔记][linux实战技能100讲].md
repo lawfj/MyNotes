@@ -26,6 +26,16 @@ help cd
 ```
 ls --help
 ```
+使用type区分命令时内部还是外部命令
+```shell
+[root@10-255-0-194 ~]# type ls
+ls is aliased to `ls --color=auto'
+[root@10-255-0-194 ~]# type cd
+cd is a shell builtin
+[root@10-255-0-194 ~]# type ftp
+ftp is /usr/bin/ftp
+
+```
 
 "--help"选项并不是一个“独立”的工具。作为一种命令的选项，它可以用来修改工具或者命令的工作方式。命令的选项通常由一个或两个连字符后跟一个或多个字母来指定。选项出现在所调用的工具名后，用空格隔开。工具的其它参数都跟在选项后，也用空格隔开。"--help"选项就像分页程序"| less"一样，它所提供的是一种快捷、高效的帮助。
 
