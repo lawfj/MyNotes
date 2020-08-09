@@ -84,7 +84,15 @@ app  bin  boot  dev  etc  home  lib  lib64  libexec  media  mnt  opt  proc  root
 ```
 输出解释
 ```
-
+[root@10-255-0-194 ~]# ls -alF
+total 44
+dr-xr-x---.  7 root root  216 Aug  9 14:14 ./
+dr-xr-xr-x. 20 root root  263 Aug  9 14:20 ../
+-rw-r--r--   1 root root    8 Jul 29 18:14 –a
+-rw-------   1 root root 4860 Aug  7 18:19 .bash_history
+-rw-r--r--.  1 root root   18 Dec 29  2013 .bash_logout
+-rw-r--r--.  1 root root  176 Dec 29  2013 .bash_profile
+|权限     
 ```
 切换用户
 su - mysql
