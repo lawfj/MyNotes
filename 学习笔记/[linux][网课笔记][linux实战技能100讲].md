@@ -218,7 +218,7 @@ useradd没有指定用户组的话，会默认创建同名用户组
 root用户可以用passwd修改自己或者其他用户的密码，普通用户只能修改自己的密码
 
 useradd 用户名
-user
+useradd -
 
 userdel
 userdel 用户名 #删除用户，不删除家目录
