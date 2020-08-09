@@ -173,7 +173,7 @@ bz2压缩率大，但速度慢。gz压缩没前者厉害，但速度快
 tar -cf file.tar
 tar -zcf file.tar.gz
 tar -jcf file.tar.bz2
-tar -zcvf fil.tar.gz
+tar -zcvf fil.tar.gz 文件
 tar -jcvf file.tar.bz2
 tar -zxcf gile.tar.gz
 解包
