@@ -184,7 +184,11 @@ tar -jxvf file.tar.bz2
 .tgz=.tar.gz
 .tbz2=tar.bz2
 ## 16 | Vim的四种模式
-
+### 四种模式
+正常模式 (Normal-mode)
+插⼊模式 (Insert-mode) 
+命令模式 (Command-mode) 
+可视模式 (Visual-mode)
 ## 17 | Vim的正常模式
 ## 18 | Vim的命令模式
 ## 19 | Vim的可视模式
