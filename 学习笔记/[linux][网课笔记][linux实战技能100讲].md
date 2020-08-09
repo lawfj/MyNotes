@@ -171,12 +171,15 @@ bz2压缩率大，但速度慢。gz压缩没前者厉害，但速度快
 打包
 tar -cf file.tar
 tar -zcf file.tar.gz
-tar -jcf
+tar -jcf file.tar.bz2
 tar -zxcf fil.tar.gz
+tar -jxcf file.tar.bz2
 解包
 tar -xf file.tar
 tar -zxf file.tar.gz
+tar -jxf file.tar.bz2
 tar -zxvf file.tar.gz
+tar -jxf file.tar.bz2
 ## 16 | Vim的四种模式
 ## 17 | Vim的正常模式
 ## 18 | Vim的命令模式
