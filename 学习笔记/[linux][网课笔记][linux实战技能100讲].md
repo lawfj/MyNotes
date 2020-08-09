@@ -220,7 +220,30 @@ root用户可以用passwd修改自己或者其他用户的密码，普通用户�
 userdel
 userdel 用户名 #删除用户，不删除家目录
 userdel -r 用户名 #连家目录也铲掉
-
+```
+[root@10-255-0-194 ~]# useradd user1
+[root@10-255-0-194 ~]# id user1
+uid=1003(user1) gid=1003(user1) groups=1003(user1)
+[root@10-255-0-194 ~]# l /home/
+total 0
+drwxr-xr-x.  6 root     root      64 Aug  9 16:04 ./
+dr-xr-xr-x. 20 root     root     263 Aug  9 16:05 ../
+drwx------   3 centos   centos    74 Jul 29 16:38 centos/
+drwx------   2 dc2-user dc2-user  62 Dec 11  2019 dc2-user/
+drwx------   3 ftpuser  ftpuser   73 Jul 29 18:05 ftpuser/
+drwx------   2 user1    user1     62 Aug  9 16:04 user1/
+[root@10-255-0-194 ~]# ls /home
+centos  dc2-user  ftpuser  user1
+[root@10-255-0-194 ~]# userdel user1
+[root@10-255-0-194 ~]# l /home/
+total 0
+drwxr-xr-x.  6 root     root      64 Aug  9 16:04 ./
+dr-xr-xr-x. 20 root     root     263 Aug  9 16:05 ../
+drwx------   3 centos   centos    74 Jul 29 16:38 centos/
+drwx------   2 dc2-user dc2-user  62 Dec 11  2019 dc2-user/
+drwx------   3 ftpuser  ftpuser   73 Jul 29 18:05 ftpuser/
+drwx------   2     1003     1003  62 Aug  9 16:04 user1/  <----k
+```
 ## 21 | su和sudo命令的区别和使用方法
 ## 22 | 用户和用户组的配置文件介绍
 ## 23 | 文件与目录权限的表示方法
