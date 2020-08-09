@@ -285,6 +285,7 @@ sudo /sbin/shutdown -c
 /etc/passwd
 
 ftpuser:x:1002:1002::/home/ftpuser:/bin/bash
+用户名称:是否使用密码进行验证:用户id:用户组id:备注:
 
 ```
 
