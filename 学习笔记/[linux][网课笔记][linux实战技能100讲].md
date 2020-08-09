@@ -332,10 +332,11 @@ chmod 777 文件or文件夹
 chmod  u+x 文件or文件夹
 chmod +x 文件or文件夹
 
-u g o：user group other
+a u g o：all user group other
 u+x	u=rwx
 g+x	g-r
-o+x
+o+x	o=w
+a+r
 ```
 ```
 chown mysql:mysql 文件or文件夹
