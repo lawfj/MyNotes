@@ -210,7 +210,8 @@ uid=0(root) gid=0(root) groups=0(root)
 [root@10-255-0-194 ~]# id ftpuser
 uid=1002(ftpuser) gid=1002(ftpuser) groups=1002(ftpuser)
 ```
-/etc/
+### /etc/passwd和/etc/shadow
+前者是
 ## 21 | su和sudo命令的区别和使用方法
 ## 22 | 用户和用户组的配置文件介绍
 ## 23 | 文件与目录权限的表示方法
