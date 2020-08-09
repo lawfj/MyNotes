@@ -252,8 +252,8 @@ usermod -g group1 user1 #修改user1的属主为group1
 change #修改用户的密码过期时间
 
 ### 切换用户
-su uer1
-su - user1 #切换到user1用户且
+su uer1 #仅仅切换到user1
+su - user1 #切换到user1用户且使用user1的环境（家目录、环境变量）
 ## 21 | su和sudo命令的区别和使用方法
 ## 22 | 用户和用户组的配置文件介绍
 ## 23 | 文件与目录权限的表示方法
