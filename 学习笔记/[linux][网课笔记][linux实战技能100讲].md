@@ -349,7 +349,9 @@ SUID
 SGID
 SBIT
 ```
-/etc/passwd是SUID权限
+/etc/shadow是SUID权限
+[root@10-255-0-194 tmp]# ls -ld /etc/shadow
+---------- 1 root root 911 Aug  9 16:05 /etc/shadow
 
 /tmp目录是SGID权限
 [root@10-255-0-194 tmp]# ls -ld /tmp
