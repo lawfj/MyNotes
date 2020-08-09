@@ -167,8 +167,13 @@ more、less命令，分页显示
 • c 打包
 • x 解包
 • f 指定操作类型为⽂件
+
+打包
 tar -cf file.tar
 tar -zf file.tar.gz
+解包
+tar -xf file.tar
+tar -
 ## 16 | Vim的四种模式
 ## 17 | Vim的正常模式
 ## 18 | Vim的命令模式
