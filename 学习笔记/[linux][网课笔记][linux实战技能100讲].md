@@ -412,7 +412,32 @@ ps -ef
 ps -eLf #显示每个进程有多少线程
 ps aux
 ```
-
+### pstree
+```
+[root@10-255-0-194 tmp]# pstree
+systemd─┬─2*[agetty]
+        ├─auditd───{auditd}
+        ├─client─┬─client─┬─php_scanner
+        │        │        └─16*[{client}]
+        │        └─7*[{client}]
+        ├─crond
+        ├─dbus-daemon
+        ├─dhclient
+        ├─firewalld───{firewalld}
+        ├─gssproxy───5*[{gssproxy}]
+        ├─monitor-agent───5*[{monitor-agent}]
+        ├─ntpd
+        ├─polkitd───6*[{polkitd}]
+        ├─rsyslogd───2*[{rsyslogd}]
+        ├─sga───2*[{sga}]
+        ├─sgd───7*[{sgd}]
+        ├─sshd───sshd───bash───pstree
+        ├─systemd-journal
+        ├─systemd-logind
+        ├─systemd-udevd
+        ├─tuned───4*[{tuned}]
+        └─vsftpd
+```
 linux的第一个进程：0号进程，idle进程，其余所有的进程都是由他创建
 ## 38 | 进程的控制与进程之间的关系
 ## 39 | 进程的通信方式与信号：kill命令
