@@ -217,6 +217,9 @@ useradd没有指定用户组的话，会默认创建同名用户组
 只有root用户有创建用户的权限，普通用户不行
 root用户可以用passwd修改自己或者其他用户的密码，普通用户只能修改自己的密码
 
+useradd 用户名
+user
+
 userdel
 userdel 用户名 #删除用户，不删除家目录
 userdel -r 用户名 #连家目录也铲掉
@@ -245,6 +248,7 @@ drwx------   3 ftpuser  ftpuser   73 Jul 29 18:05 ftpuser/
 drwx------   2     1003     1003  62 Aug  9 16:04 user1/  <---可以看到，这个目录的属主和属组为uid，变成了无主文件，除了root用户谁都无法访问
 ```
 usermod -d /home/w1 w #修改w用户的家目录为/home/w1
+usermod -g group1 user1 #修改user1的属主为group1
 change #修改用户的密码过期时间
 
 ## 21 | su和sudo命令的区别和使用方法
