@@ -180,9 +180,11 @@ tar -zxf file.tar.gz
 tar -jxf file.tar.bz2
 tar -zxvf file.tar.gz
 tar -jxvf file.tar.bz2
+下面两个格式为了方面在网络上进行传播，进行了简写而已
 .tgz=.tar.gz
 .tbz2=tar.bz2
 ## 16 | Vim的四种模式
+
 ## 17 | Vim的正常模式
 ## 18 | Vim的命令模式
 ## 19 | Vim的可视模式
