@@ -26,7 +26,7 @@ help cd
 ```
 ls --help
 ```
-使用type区分命令时内部还是外部命令
+使用type区分命令时内部还是外部命令还是别名还是啥啥啥
 ```shell
 [root@10-255-0-194 ~]# type ls
 ls is aliased to `ls --color=auto'
