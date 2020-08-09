@@ -330,7 +330,11 @@ chgrp 可单独设置属组，不常用
 ```
 chmod 777 文件or文件夹
 chmod  u+x 文件or文件夹
-chmod 
+chmod +x 文件or文件夹
+```
+```
+chown mysql:mysql file1
+chown :mysql file1
 ```
 ## 25 | 权限管理以及文件的特殊权限
 # 第三章：系统管理篇 (29讲)
