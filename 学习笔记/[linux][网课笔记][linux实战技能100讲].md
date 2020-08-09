@@ -197,7 +197,7 @@ tar -jxvf file.tar.bz2
 管理员
 普通用户
 普通用户无法进入其他用户的家目录，不能读取编辑一些系统配置文件，如/etc/passwd，除非root授权给他
-useradd 新建⽤户
+useradd 新建⽤户，同时创建家目录
 userdel 删除⽤户
 passwd 修改⽤户密码
 usermod 修改⽤户属性
@@ -210,6 +210,7 @@ uid=0(root) gid=0(root) groups=0(root)
 [root@10-255-0-194 ~]# id ftpuser
 uid=1002(ftpuser) gid=1002(ftpuser) groups=1002(ftpuser)
 ```
+/etc/
 ## 21 | su和sudo命令的区别和使用方法
 ## 22 | 用户和用户组的配置文件介绍
 ## 23 | 文件与目录权限的表示方法
