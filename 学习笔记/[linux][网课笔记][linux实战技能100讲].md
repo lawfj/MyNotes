@@ -438,6 +438,34 @@ systemd─┬─2*[agetty]
         ├─tuned───4*[{tuned}]
         └─vsftpd
 ```
+### top
+```
+top - 23:28:21 up 11 days,  6:50,  1 user,  load average: 0.01, 0.06, 0.10
+Tasks:  88 total,   1 running,  87 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.7 us,  1.0 sy,  0.0 ni, 98.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem :  1014884 total,    99496 free,   225208 used,   690180 buff/cache
+KiB Swap:        0 total,        0 free,        0 used.   581836 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND                                                                                                                
+ 1300 root      20   0   50300  16024   2692 S  0.3  1.6   1:17.75 systemd-journal                                                                                                        
+    1 root      20   0  127544   2764   1352 S  0.0  0.3   4:09.72 systemd                                                                                                                
+    2 root      20   0       0      0      0 S  0.0  0.0   0:00.06 kthreadd                 
+```
+23:28:21：当前时间
+up 11 days,  6:50：系统自上次启动以来经过的时间
+1 user：当前有1个用户登录
+load average：平均负载，1为满负荷，>1为拥塞。三个数字分别代表最近5分钟、10分钟、15分钟
+Tasks:  88 total：当前有88个进程
+1 running,  87 sleeping,   0 stopped,   0 zombie：当前有1个进程在执行，87个空闲，0个停止，0个僵尸
+0.7 us：CPU使用率，用户进程占用CPU百分比
+1.0 sy：系统进程占用CPU百分比
+98.3 id：空闲百分比。这一行全部加起来为100%
+KiB Mem :  1014884 total,    99496 free,   225208 used,   690180 buff/cache：内存使用。总共、空闲、已经使用、缓存
+KiB Swap:        0 total,        0 free,        0 used.   581836 avail Mem：交换区使用。
+
+其中%Cpu(s)是总体的CPU使用率。如果想看每一个CPU（逻辑）的使用情况，可以按数字1，展开。
+按下s键，可以调整每次刷新的时间。默认3秒
+
 linux的第一个进程：0号进程，idle进程，其余所有的进程都是由他创建
 ## 38 | 进程的控制与进程之间的关系
 ## 39 | 进程的通信方式与信号：kill命令
