@@ -21,6 +21,8 @@ sed的基本工作方式是：
 ### 替换命令s
 ```shell
 sed 's/old/new/' filename
+
+可以执行多个命令，但每一条命令前都要加-e
 sed -e 's/old/new/' -e 's/old/new' filename ...
 sed -i 's/old/new/' 's/old/new/' filename ...
 ```
