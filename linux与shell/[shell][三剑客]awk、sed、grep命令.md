@@ -22,7 +22,7 @@ sed的基本工作方式是：
 ```shell
 sed 's/old/new/' filename
 sed -e 's/old/new/' -e 's/old/new' filename ...
-sed -i 's/old/new/' ''
+sed -i 's/old/new/' 's/old/new/' filename ...
 ```
 # awk
 ## awk基本用法
