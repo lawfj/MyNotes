@@ -20,7 +20,8 @@ sed的基本工作方式是：
 处理完成后输出该行
 ### 替换命令s
 ```shell
-sed 's/old/new/'
+sed 's/old/new/' filename
+sed
 ```
 # awk
 ## awk基本用法
