@@ -29,7 +29,10 @@ sed -e 's/old/new/' -e 's/old/new' filename ...
 sed -i 's/old/new/' 's/old/new/' filename ...
 ```
 ### 使用正则表达式
-
+```
+sed 's/正则表达式/new' filename
+sed -r 's/扩展正则表达式/new' filename
+```
 # awk
 ## awk基本用法
 awk一般用于对文本内容进行统计、按需要的格式进行输出
