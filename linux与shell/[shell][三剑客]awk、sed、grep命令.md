@@ -21,7 +21,8 @@ sed的基本工作方式是：
 ### 替换命令s
 ```shell
 sed 's/old/new/' filename
-sed -e 's/o'
+sed -e 's/old/new/' -e 's/old/new' filename ...
+sed -i 's/old/new/' ''
 ```
 # awk
 ## awk基本用法
