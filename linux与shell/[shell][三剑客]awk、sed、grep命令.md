@@ -11,6 +11,9 @@ sed一般用于对文本内容做替换
 ```
 sed '/user1/s/user1/u1' /etc/passwd
 ```
+## sed的替换命令
+sed的模式空间
+替换命令s
 分隔符之间可以使用正则表达式
 # awk
 ## awk基本用法
