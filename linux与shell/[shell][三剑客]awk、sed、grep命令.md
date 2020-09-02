@@ -36,7 +36,8 @@ sed 's/正则表达式/new' filename
 sed -r 's/扩展正则表达式/new' filename  #+ ? |
 ```
 
-替换
+替换斜杠
+sed 's/!/!abc!' filename
 # awk
 ## awk基本用法
 awk一般用于对文本内容进行统计、按需要的格式进行输出
