@@ -11,7 +11,9 @@ sed一般用于对文本内容做替换
 ```shell
 sed '/user1/s/user1/u1' /etc/passwd
 ```
+注：
 分隔符之间可以使用正则表达式
+可以使用不同的分隔符
 ## sed的替换命令
 ### sed的模式空间（处理过程）
 sed的基本工作方式是：
@@ -33,6 +35,8 @@ sed -i 's/old/new/' 's/old/new/' filename ...
 sed 's/正则表达式/new' filename
 sed -r 's/扩展正则表达式/new' filename  #+ ? |
 ```
+
+替换
 # awk
 ## awk基本用法
 awk一般用于对文本内容进行统计、按需要的格式进行输出
