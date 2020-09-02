@@ -31,7 +31,7 @@ sed -i 's/old/new/' 's/old/new/' filename ...
 ### 使用正则表达式
 ```
 sed 's/正则表达式/new' filename
-sed -r 's/扩展正则表达式/new' filename
+sed -r 's/扩展正则表达式/new' filename  #+ ? |
 ```
 # awk
 ## awk基本用法
