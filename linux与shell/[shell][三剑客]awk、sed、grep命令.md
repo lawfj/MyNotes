@@ -24,8 +24,12 @@ sed 's/old/new/' filename
 
 可以执行多个命令，但每一条命令前都要加-e
 sed -e 's/old/new/' -e 's/old/new' filename ...
+
+原样写回原来的文件
 sed -i 's/old/new/' 's/old/new/' filename ...
 ```
+### 使用正则表达式
+
 # awk
 ## awk基本用法
 awk一般用于对文本内容进行统计、按需要的格式进行输出
