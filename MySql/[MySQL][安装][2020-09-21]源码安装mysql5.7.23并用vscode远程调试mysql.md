@@ -207,6 +207,18 @@ CMake Warning:
 make & make install
 #make 进行编译，这里时间比较久，期间可以进行vs code的配置
 #make install 进行安装
+
+[100%] Building CXX object libmysqld/examples/CMakeFiles/mysqltest_embedded.dir/__/__/client/mysqltest.cc.o
+Linking CXX executable mysqltest_embedded
+[100%] Built target mysqltest_embedded
+Scanning dependencies of target my_safe_process
+[100%] Building CXX object mysql-test/lib/My/SafeProcess/CMakeFiles/my_safe_process.dir/safe_process.cc.o
+Linking CXX executable my_safe_process
+[100%] Built target my_safe_process
+
+[1]+  完成                  make
+[root@localhost mysql-5.7.21]# 
+
 ```
 make报错：
 ```
