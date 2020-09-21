@@ -1,5 +1,6 @@
 看网上大神攻略，想试试用vs code远程调试mysql。结果在滴滴云上用wget下载mysql官网镜像，太慢了受不了，又找不到5.7.21的源码国内镜像，只好用5.7.23代替，先看下吧。
-
+# 参考
+[Centos7.4 安装MySQL 5.7.21 (通用二进制包)](https://blog.csdn.net/zml3721/article/details/79090983)
 # 源码安装
 以下操作均在linux下执行
 ## mysql国内镜像
