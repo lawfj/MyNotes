@@ -390,7 +390,7 @@ mysqld --defaults-file=/data/mysql_5.7.21_source/mysql/app/mysql/my.cnf --initia
 mysqld --defaults-file=/data/mysql_5.7.21_source/mysql/app/mysql/my.cnf --initialize --user=mysql --basedir=/data/mysql_5.7.21_source/mysql/app/mysql --datadir=/data/mysql_5.7.21_source/mysql/data
 
 注意：此条语句执行时容易报错，成功至少要满足以下几个条件
-0. -defaults-file必须放在第一位，不然报错“unknown variable”
+0. --defaults-file调整到--initialize前面，不然报错“unknown variable”
 1. /data/mysql_5.7.21_source/mysql/data目录存在并且一定要为空目录，否则报错；
 2. 如果本机已经存在了其余的mysql，请确实/etc/my.cnf文件不存在，否则会按照/etc/my.cnf中的设置进行初始化，datadir会读取另一个mysql实例的路径，从而导致报错。遇到此情况，可以先将已经存在的mysql实例停止，然后将/etc/my.cnf文件剪切到此实例对应的datadir目录中，再启动此实例，然后重新执行初始化命令；
 3. 所有的报错信息都将会在my.cnf指定的mysql.err日志中体现，如果没有配置这个日志，将会在控制台直接输出。也不需要在命令中添加--log-error
