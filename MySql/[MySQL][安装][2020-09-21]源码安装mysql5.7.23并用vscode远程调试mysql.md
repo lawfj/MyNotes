@@ -429,10 +429,13 @@ cp -p support-files/mysql.server /etc/init.d/
 chkconfig --add mysql.server
 ```
 3. 测试使用systemctl 启动mysql
-```systemctl start mysql.server
-
-5. 查看是否启动成功
+```
+systemctl start mysql.server
+```
+4. 查看是否启动成功
+```
 ps -ef | grep mysql
+```
 有mysql服务则启动成功
 
 6. 添加到linux服务器开机自启动
