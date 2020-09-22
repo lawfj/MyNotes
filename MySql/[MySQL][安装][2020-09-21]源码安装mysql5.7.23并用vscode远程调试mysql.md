@@ -422,9 +422,9 @@ update mysql.user set host='%' where user='root';
 ### 配置成服务
 1、添加mysql系统启动脚本
 ```
-cp -p support-files/mysql.server /etc/init.d/mysqld
-/etc/init.d/mysqld start
+cp -p support-files/mysql.server /etc/init.d/
 ```
+2、
 # vs code配置
 ## 远程机器
 1、按照上述步骤进行MySQL源码编译安装，记得加-DWITH_DEBUG参数
