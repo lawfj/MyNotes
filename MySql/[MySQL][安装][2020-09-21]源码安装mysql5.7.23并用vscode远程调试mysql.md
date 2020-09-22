@@ -254,7 +254,7 @@ $MYSQL_HOME内也安装上了相关内容
 /data/mysql_5.7.21_source/mysql/app/mysql
 [mysql@localhost mysql]$ ls
 bin      COPYING-test  include  man     mysql-test  README-test  support-files
-COPYING  docs          lib      README      share
+COPYING  docs          lib      README  share
 
 ```
 ## 初始化MySQL
@@ -380,13 +380,14 @@ pid_file=/data/mysql_5.7.21_source/mysql/data/mysqld.pid
 tmpdir=/data/mysql_5.7.21_source/mysql/tmp
 ```
 ### 初始化MySQL及用户密码
+下列命令均在mysql用户下执行
 ```
 #两种方式任选一种
 #1）不生成root密码
-./mysqld --initialize-insecure --user=mysql --basedir=/data/mysql_5.7.21_source/mysql/app/mysql --datadir=/data/mysql_5.7.21_source/mysql/data --default-files=/data/mysql_5.7.21_source/mysql/my.cnf
+mysqld --initialize-insecure --user=mysql --basedir=/data/mysql_5.7.21_source/mysql/app/mysql --datadir=/data/mysql_5.7.21_source/mysql/data --default-files=/data/mysql_5.7.21_source/mysql/my.cnf
 
 #2）生成root随机密码，在/data/mysql/mysql-error.log文件中 
-./mysqld --initialize --user=mysql --basedir=/data/mysql_5.7.21_source/mysql/app/mysql --datadir=/data/mysql_5.7.21_source/mysql/data --default-files=/data/mysql_5.7.21_source/mysql/my.cnf
+mysqld --initialize --user=mysql --basedir=/data/mysql_5.7.21_source/mysql/app/mysql --datadir=/data/mysql_5.7.21_source/mysql/data --default-files=/data/mysql_5.7.21_source/mysql/my.cnf
 
 注意：此条语句执行时容易报错，成功至少要满足以下几个条件
 1. /data/mysql_5.7.21_source/mysql/data目录存在并且一定要为空目录，否则报错；
