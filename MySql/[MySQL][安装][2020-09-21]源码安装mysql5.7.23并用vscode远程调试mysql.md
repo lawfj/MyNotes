@@ -466,3 +466,5 @@ yum install gdb-gdbserver
 ![title](https://raw.githubusercontent.com/lawfj/MyNotesPic/master/MyNotes/2020/09/22/1600710835784-1600710835786.png)
 
 3、安装兼容 OpenSSH 的 SSH 客户端
+
+![title](https://raw.githubusercontent.com/lawfj/MyNotesPic/master/MyNotes/2020/09/22/1600781522753-1600781522755.png)
