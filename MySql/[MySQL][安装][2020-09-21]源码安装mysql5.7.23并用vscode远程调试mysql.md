@@ -125,12 +125,12 @@ export PATH
 6、创建目录并授权
 ```
 使用root用户执行以下命令：
-mkdir -p /data/mysql_5.7.21_source/mysql/app
+mkdir -p /data/mysql_5.7.21_source/mysql/app/mysql
 mkdir -p /data/mysql_5.7.21_source/mysql/data
 mkdir -p /data/mysql_5.7.21_source/mysql/tmp
 mkdir -p /data/mysql_5.7.21_source/mysql/log/innodb_log
 mkdir -p /data/mysql_5.7.21_source/mysql/log/bin_log
-mkdir -p /data/mysql_5.7.21_source/mysql/run
+mkdir -p /data/mysql_5.7.21_source/mysql/log/relay_log
 
 授权：
 chown -R mysql:mysql /data/mysql_5.7.21_source
@@ -164,7 +164,7 @@ https://dev.mysql.com/doc/refman/5.7/en/source-configuration-options.html#cmake-
 在mysql源代码目录下执行
 注：-DWITH_DEBUG参数一定不能忘！调试用
 cmake \
--DCMAKE_INSTALL_PREFIX=/data/mysql_5.7.21_source/mysql/app \
+-DCMAKE_INSTALL_PREFIX=/data/mysql_5.7.21_source/mysql/app/mysql \
 -DMYSQL_DATADIR=/data/mysql_5.7.21_source/mysql/data \
 -DDEFAULT_CHARSET=utf8mb4 \
 -DDEFAULT_COLLATION=utf8mb4_general_ci \
