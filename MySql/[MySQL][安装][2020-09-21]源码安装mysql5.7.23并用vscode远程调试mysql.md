@@ -388,7 +388,7 @@ mysql -uroot -p
 1)法一
 set password for root@'%'='密码';
 2)法二
-mysqladmin -uroot -p旧密码 pas
+mysqladmin -uroot -p旧密码 password 新密码
 ```
 ### 配置成服务
 
