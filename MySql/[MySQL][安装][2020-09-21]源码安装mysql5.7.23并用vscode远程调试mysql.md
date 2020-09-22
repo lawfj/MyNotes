@@ -424,7 +424,19 @@ update mysql.user set host='%' where user='root';
 ```
 cp -p support-files/mysql.server /etc/init.d/
 ```
-2、添加
+2、添加mysql.server到服务中
+```
+chkconfig --add mysql.server
+```
+3. 测试使用systemctl 启动mysql
+```systemctl start mysql.server
+
+5. 查看是否启动成功
+ps -ef | grep mysql
+有mysql服务则启动成功
+
+6. 添加到linux服务器开机自启动
+systemctl enable mysql.server
 # vs code配置
 ## 远程机器
 1、按照上述步骤进行MySQL源码编译安装，记得加-DWITH_DEBUG参数
