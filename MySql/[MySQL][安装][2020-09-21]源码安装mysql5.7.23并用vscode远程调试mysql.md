@@ -180,7 +180,7 @@ cmake \
 -DWITH_MEMORY_STORAGE_ENGINE=1 \
 -DMYSQL_UNIX_ADDR=/data/mysql_5.7.21_source/mysql/data/mysql.sock \
 -DMYSQL_TCP_PORT=3306 \
--DSYSCONFDIR=/data/mysql_5.7.21_source/mysql/app \
+-DSYSCONFDIR=/data/mysql_5.7.21_source/mysql/app/mysql \
 -DMYSQL_USER=mysql \
 -DENABLE_DOWNLOADS=1 \
 -DWITH_BOOST=/data/mysql_5.7.21_source/mysql/boost \
