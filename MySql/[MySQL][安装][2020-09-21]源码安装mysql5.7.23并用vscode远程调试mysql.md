@@ -386,7 +386,9 @@ tmpdir=/data/mysql_5.7.21_source/mysql/tmp
 mysql -uroot -p
 #修改密码
 1)法一
-set password for
+set password for root@'%'='密码';
+2)法二
+mysqladmin -uroot -p旧密码 pas
 ```
 ### 配置成服务
 
