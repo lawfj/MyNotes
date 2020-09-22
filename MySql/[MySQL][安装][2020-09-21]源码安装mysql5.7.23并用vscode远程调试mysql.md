@@ -393,11 +393,17 @@ mysqld --defaults-file=/data/mysql_5.7.21_source/mysql/app/mysql/my.cnf --initia
 0. -defaults-file必须放在第一位，不然报错“unknown variable”
 1. /data/mysql_5.7.21_source/mysql/data目录存在并且一定要为空目录，否则报错；
 2. 如果本机已经存在了其余的mysql，请确实/etc/my.cnf文件不存在，否则会按照/etc/my.cnf中的设置进行初始化，datadir会读取另一个mysql实例的路径，从而导致报错。遇到此情况，可以先将已经存在的mysql实例停止，然后将/etc/my.cnf文件剪切到此实例对应的datadir目录中，再启动此实例，然后重新执行初始化命令；
+3. 所有的报错信息都将会在mysql.err日志中体现，如果没有配置这个日志，将会在控制台直接输出。
 ```
 ### 启动MySQL
 1、安全启动MySQL
 ```
-./mysqld_safe /data/mysql_5.7.21_source/mysql/app/mysql/my.cnf &
+mysqld_safe &
+
+[mysql@localhost data]$ ps -ef|grep mysqld
+mysql    18107 16866  0 17:09 pts/1    00:00:00 /bin/sh /data/mysql_5.7.21_source/mysql/app/mysql/bin/mysqld_safe
+mysql    19071 18107  3 17:09 pts/1    00:00:01 /data/mysql_5.7.21_source/mysql/app/mysql/bin/mysqld --basedir=/data/mysql_5.7.21_source/mysql/app/mysql --datadir=/data/mysql_5.7.21_source/mysql/data --plugin-dir=/data/mysql_5.7.21_source/mysql/app/mysql/lib/plugin --log-error=/data/mysql_5.7.21_source/mysql/data/mysql.err --open-files-limit=5000 --pid-file=/data/mysql_5.7.21_source/mysql/data/mysqld.pid --socket=/data/mysql_5.7.21_source/mysql/data/mysql.sock --port=3306
+mysql    19141 16349  0 17:10 pts/2    00:00:00 grep --color=auto mysqld
 ```
 2、登录MySQL，修改密码
 ```
