@@ -384,7 +384,7 @@ tmpdir=/data/mysql_5.7.21_source/mysql/tmp
 ```
 #两种方式任选一种
 #1）不生成root密码
-mysqld --initialize-insecure --user=mysql --basedir=/data/mysql_5.7.21_source/mysql/app/mysql --datadir=/data/mysql_5.7.21_source/mysql/data --default-files=/data/mysql_5.7.21_source/mysql/app/mysql/my.cnf
+mysqld --initialize-insecure --user=mysql --basedir=/data/mysql_5.7.21_source/mysql/app/mysql --datadir=/data/mysql_5.7.21_source/mysql/data --defaults-file=/data/mysql_5.7.21_source/mysql/app/mysql/my.cnf
 
 #2）生成root随机密码，在/data/mysql/mysql-error.log文件中 
 mysqld --initialize --user=mysql --basedir=/data/mysql_5.7.21_source/mysql/app/mysql --datadir=/data/mysql_5.7.21_source/mysql/data --defaults-file=/data/mysql_5.7.21_source/mysql/app/mysql/my.cnf
