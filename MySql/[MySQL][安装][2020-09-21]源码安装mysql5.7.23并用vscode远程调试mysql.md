@@ -391,6 +391,8 @@ set password for root@'%'='密码';
 mysqladmin -uroot -p旧密码 password 新密码
 ```
 ### 配置成服务
+1、添加mysql系统启动脚本
+``
 
 # vs code配置
 ## 远程机器
