@@ -415,7 +415,7 @@ set password for root='密码';
 mysqladmin -uroot -p旧密码 password 新密码
 3)法三
 alter user test identified by '123456';
-注，上面的方法没有指定host
+注，事实上修改root用户密码只能用法二，且上面的方法没有指定host，徐亚
 ```
 ### 配置成服务
 1、添加mysql系统启动脚本
