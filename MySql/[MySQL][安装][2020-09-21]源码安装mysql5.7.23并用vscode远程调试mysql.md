@@ -305,7 +305,7 @@ binlog_cache_size=1M
 binlog_format=ROW
 binlog_gtid_simple_recovery=1
 binlog_rows_query_log_events=1
-
+max_binlog_size=512M
 
 # relay
 relay_log=/data/mysql_5.7.21_source/mysql/log/relay_log/mysql-relay
