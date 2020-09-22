@@ -415,7 +415,7 @@ set password for root='密码';
 mysqladmin -uroot -p旧密码 password 新密码
 3)法三
 alter user test identified by '123456';
-注，事实上修改root用户密码只能用法二，且上面的方法没有指定host，moren 需要继续修改host
+注，事实上修改root用户密码只能用法二，且上面的方法没有指定host，默认host为localhost，所以需要继续修改host
 法一：
 update mysql.user set host='%' where user='root';
 ```
