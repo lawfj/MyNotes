@@ -118,7 +118,7 @@ fi
 
 PATH=$PATH:$HOME/.local/bin:$HOME/bin:/data/mysql_5.7.21_source/mysql/bin
 
-export MYSQL_HOME=/data/mysql_5.7.21_source/mysql/app/mysql/bin
+export MYSQL_HOME=/data/mysql_5.7.21_source/mysql/app/mysql
 export PATH=$MYSQL_HOME/bin:$PATH
 export MYSQL_DATADIR=/data/mysql_5.7.21_source/mysql/data
 export MYSQL_LOGDIR=/data/mysql_5.7.21_source/mysql/log
