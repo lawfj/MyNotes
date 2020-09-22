@@ -258,7 +258,7 @@ general_log=off
 explicit_defaults_for_timestamp=true
 
 # system
-basedir=/data/mysql_5.7.21_source/mysql/app
+basedir=/data/mysql_5.7.21_source/mysql/app/mysql
 datadir=/data/mysql_5.7.21_source/mysql/data/
 open_files_limit=10240
 # 控制mysql接收数据包的大小，主从应该保证一致
