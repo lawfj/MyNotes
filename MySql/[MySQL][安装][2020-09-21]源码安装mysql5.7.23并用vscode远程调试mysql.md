@@ -314,7 +314,7 @@ slave_skip_errors=OFF
 
 # innodb
 innodb_data_home_dir=/data/mysql_5.7.21_source/mysql/data
-innodb_log_group_home_dir=/data/mysql_5.7.21_source/mysql/log/bin_log
+innodb_log_group_home_dir=/data/mysql_5.7.21_source/mysql/log/innodb_log
 innodb_adaptive_flushing=ON
 innodb_adaptive_hash_index=ON
 innodb_autoinc_lock_mode=1
