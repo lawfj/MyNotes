@@ -242,7 +242,122 @@ sudo swapon /swapfile
 然后重新执行make & make install
 ```
 ## 初始化MySQL
-### 
+### my.cnf配置
+```
+[client]
+port=3306
+socket=/data/mysql_5.7.21_source/mysql/data/mysql.sock
+
+[mysql]
+socket=/data/mysql_5.7.21_source/mysql/data/mysql.sock
+
+[mysqld]
+autocommit=1
+general_log=off
+explicit_defaults_for_timestamp=true
+
+# system
+basedir=/data/mysql_5.7.21_source/mysql/
+datadir=/data/mysql_5.7.21_source/mysql/data/
+open_files_limit=10240
+# 控制mysql接收数据包的大小，主从应该保证一致
+max_allowed_packet=32m
+# 控制允许的最大连接数
+max_connections=2000
+# 最大用户连接不宜过大
+ max_user_connections=200
+wait_timeout=100
+pid_file=/data/mysql_5.7.21_source/mysql/data/mysqld.pid
+port=3306
+server_id=101
+# 禁用DNS查找
+skip_name_resolve=ON
+socket=/data/mysql_5.7.21_source/mysql/data/mysql.sock
+tmpdir=/data/mysql_5.7.21_source/mysql/tmp
+# 默认值5000
+open_files_limit=5000
+# 设置 LOAD DATA and  SELECT ... INTO OUTFILE 导出限制
+secure_file_priv=''
+
+# bin log 
+log_bin=/data/mysql_5.7.21_source/mysql/log/innodb_log
+binlog_cache_size=32768
+binlog_format=row
+# 保留bin-log保存的日期
+expire_logs_days=3
+log_slave_updates=ON
+max_binlog_size=512M
+log-bin-index=binlog.index
+# 控制mysql如何想磁盘刷新binlog，默认为0，建议设置为1,
+sync_binlog=1
+
+# logging
+log_error=/data/mysql_5.7.21_source/mysql/data/mysql.err
+slow_query_log_file=/data/mysql_5.7.21_source/mysql/log/slow.log
+log_queries_not_using_indexes=0
+slow_query_log=1
+log_slave_updates=ON
+log_slow_admin_statements=1
+long_query_time=1
+
+# relay
+relay_log=/data/mysql_5.7.21_source/mysql/log/relaylog
+relay_log_index=/data/mysql_5.7.21_source/mysql/log/relay.index
+relay_log_info_file=/data/mysql_5.7.21_source/mysql/log/relay-log.info
+
+# slave 
+slave_load_tmpdir=/data/mysql_5.7.21_source/mysql/tmp
+slave_skip_errors=OFF
+# 禁止非super权限的用户写权限,一定要在从库启用
+# read_only=1
+
+# innodb
+innodb_data_home_dir=/data/mysql_5.7.21_source/mysql/log/bin_log
+innodb_log_group_home_dir=/data/mysql_5.7.21_source/mysql/log/bin_log
+innodb_adaptive_flushing=ON
+innodb_adaptive_hash_index=ON
+innodb_autoinc_lock_mode=1
+innodb_buffer_pool_instances=8
+
+# default 
+innodb_change_buffering=inserts
+innodb_buffer_pool_size=256M
+innodb_data_file_path=ibdata1:32M;ibdata2:16M:autoextend
+# 控制双写缓冲，避免页损坏
+innodb_doublewrite=1
+# 为每一张表建立一个单独的表空间，不使用系统表空间
+innodb_file_per_table=1
+# 系统提交事务的方式： 2：每次事物提交，执行log数据写入catch，每秒执行一次flush log到磁盘
+innodb_flush_log_at_trx_commit=2
+# 文件交换的方式，linux服务器设置为O_DIRECT即可
+innodb_flush_method=O_DIRECT
+innodb_io_capacity=1000
+innodb_lock_wait_timeout=10
+innodb_log_buffer_size=20M
+innodb_log_file_size=100M
+innodb_log_files_in_group=4
+innodb_max_dirty_pages_pct=60
+# 不能大于open_file_limit
+innodb_open_files=4000
+innodb_purge_threads=1
+innodb_read_io_threads=4
+innodb_stats_on_metadata=OFF
+innodb_support_xa=ON
+innodb_use_native_aio=OFF
+innodb_write_io_threads=10
+
+[mysqldump]
+quick
+sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES
+
+[mysqld_safe]
+basedir=/data/mysql_5.7.21_source/mysql
+datadir=/data/mysql_5.7.21_source/mysql/data
+pid_file=/data/mysql_5.7.21_source/mysql/data/mysqld.pid
+tmpdir=/data/mysql_5.7.21_source/mysql/tmp
+```
+### 初始化MySQL及用户密码
+
 # vs code配置
 ## 远程机器
 1、按照上述步骤进行MySQL源码编译安装，记得加-DWITH_DEBUG参数
