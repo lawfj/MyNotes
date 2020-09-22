@@ -126,7 +126,7 @@ export MYSQL_TMPDIR=/data/mysql_5.7.21_source/mysql/tmp
 export MYSQL_UNIX_PORT=/data/mysql_5.7.21_source/mysql/data/mysql.sock
 export MYSQL_TCP_PORT=3306
 ```
-/data/mysql_5.7.21_source/mysql/bin是我的mysql bin目录
+/data/mysql_5.7.21_source/mysql/app/mysql/bin是我的mysql bin目录
 保存退出，执行source .bash_profile,加载bash_profile
 6、创建目录并授权
 ```
