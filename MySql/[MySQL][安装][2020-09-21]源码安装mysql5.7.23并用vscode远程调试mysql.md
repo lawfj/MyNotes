@@ -470,3 +470,4 @@ yum install gdb-gdbserver
 4、vscode连接远程服务器
 在 VSCode 主界面  ctrl+shift+p 选  Remote.SSH: Connect to host, 输入  root@<ip>, 成功后界面左下角会有  SSH: <ip> 的已连接状态
 ![title](https://raw.githubusercontent.com/lawfj/MyNotesPic/master/MyNotes/2020/09/22/1600785126949-1600785127002.png)
+![title](https://raw.githubusercontent.com/lawfj/MyNotesPic/master/MyNotes/2020/09/22/1600785172545-1600785172547.png)
