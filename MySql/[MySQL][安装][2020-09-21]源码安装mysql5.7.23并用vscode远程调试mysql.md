@@ -300,6 +300,7 @@ slow_query_log=1
 log_slave_updates=ON
 log_slow_admin_statements=1
 long_query_time=1
+log_bin=
 
 # relay
 relay_log=/data/mysql_5.7.21_source/mysql/log/relay_log/mysql-relay
