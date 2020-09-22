@@ -373,11 +373,14 @@ tmpdir=/data/mysql_5.7.21_source/mysql/tmp
 ./mysqld --initialize --user=mysql --basedir=/data/mysql_5.7.21_source/mysql/app --datadir=/data/mysql_5.7.21_source/mysql/data --default-files=/data/mysql_5.7.21_source/mysql/my.cnf
 
 注意：此条语句执行时容易报错，成功至少要满足以下几个条件
-1. /u01/my3306/mysql/data目录存在并且一定要为空目录，否则报错；
+1. /data/mysql_5.7.21_source/mysql/data目录存在并且一定要为空目录，否则报错；
 2. 如果本机已经存在了其余的mysql，请确实/etc/my.cnf文件不存在，否则会按照/etc/my.cnf中的设置进行初始化，datadir会读取另一个mysql实例的路径，从而导致报错。遇到此情况，可以先将已经存在的mysql实例停止，然后将/etc/my.cnf文件剪切到此实例对应的datadir目录中，再启动此实例，然后重新执行初始化命令；
 ```
 ### 启动MySQL
-
+1、安全启动
+```
+./mysqld_safe --user=mysql --defaults-file=/u01/my3306/mysql/my.cnf &
+```
 
 ### 配置成服务
 
