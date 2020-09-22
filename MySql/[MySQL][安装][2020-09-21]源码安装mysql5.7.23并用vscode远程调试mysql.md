@@ -241,7 +241,8 @@ sudo swapon /swapfile
 
 然后重新执行make & make install
 ```
-
+## 初始化MySQL
+### 
 # vs code配置
 ## 远程机器
 1、按照上述步骤进行MySQL源码编译安装，记得加-DWITH_DEBUG参数
