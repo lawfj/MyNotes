@@ -248,7 +248,8 @@ sudo swapon /swapfile
 然后重新执行make & make install
 ```
 完成make & make install后，如下提示：
-
+![title](https://raw.githubusercontent.com/lawfj/MyNotesPic/master/MyNotes/2020/09/22/1600764439200-1600764439262.png)
+$MYSQL_HOME内也
 ## 初始化MySQL
 ### my.cnf配置
 在/data/mysql_5.7.21_source/mysql/app目录下创建my.cnf文件，并写入下面配置内容
