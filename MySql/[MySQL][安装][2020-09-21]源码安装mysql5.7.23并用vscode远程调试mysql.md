@@ -473,3 +473,4 @@ yum install gdb-gdbserver
 ![title](https://raw.githubusercontent.com/lawfj/MyNotesPic/master/MyNotes/2020/09/22/1600785172545-1600785172547.png)
 注：输入密码后连接成功，但第一次远程服务器必须要联网下载插件，不然会卡住
 ![title](https://raw.githubusercontent.com/lawfj/MyNotesPic/master/MyNotes/2020/09/22/1600785283126-1600785283129.png)
+5、然后就可以从侧边栏打开项目路径了, 点击左边的资源管理器，点击打开文件夹，在下图蓝框处输入mysql源码路径（注意不是编译后的运行程序路径是源码解压路径）
