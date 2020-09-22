@@ -243,6 +243,7 @@ sudo swapon /swapfile
 ```
 ## 初始化MySQL
 ### my.cnf配置
+在/data/mysql_5.7.21_source/mysql
 ```
 [client]
 port=3306
