@@ -420,6 +420,7 @@ alter user test identified by '123456';
 update mysql.user set host='%' where user='root';
 ```
 ### 配置成服务
+以下内容使用root执行
 1、添加mysql系统启动脚本
 ```
 cp -p /data/mysql_5.7.21_source/mysql/app/mysql/support-files/mysql.server /etc/init.d/
