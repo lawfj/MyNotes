@@ -302,7 +302,7 @@ log_slow_admin_statements=1
 long_query_time=1
 
 # relay
-relay_log=/data/mysql_5.7.21_source/mysql/log/relaylog
+relay_log=/data/mysql_5.7.21_source/mysql/log/relay_log
 relay_log_index=/data/mysql_5.7.21_source/mysql/log/relay.index
 relay_log_info_file=/data/mysql_5.7.21_source/mysql/log/relay-log.info
 
@@ -313,7 +313,7 @@ slave_skip_errors=OFF
 # read_only=1
 
 # innodb
-innodb_data_home_dir=/data/mysql_5.7.21_source/mysql/log/bin_log
+innodb_data_home_dir=/data/mysql_5.7.21_source/mysql/data
 innodb_log_group_home_dir=/data/mysql_5.7.21_source/mysql/log/bin_log
 innodb_adaptive_flushing=ON
 innodb_adaptive_hash_index=ON
