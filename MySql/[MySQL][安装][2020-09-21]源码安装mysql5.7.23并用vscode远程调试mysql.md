@@ -382,8 +382,12 @@ tmpdir=/data/mysql_5.7.21_source/mysql/tmp
 ./mysqld_safe --user=mysql --defaults-file=/u01/my3306/mysql/my.cnf &
 ```
 2、登录MySQL，修改密码
+```
 mysql -uroot -p
-
+#修改密码
+1)法一
+set password for
+```
 ### 配置成服务
 
 # vs code配置
