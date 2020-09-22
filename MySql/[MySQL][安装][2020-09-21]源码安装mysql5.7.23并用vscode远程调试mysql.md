@@ -116,7 +116,7 @@ fi
 
 # User specific environment and startup programs
 
-PATH=$PATH:$HOME/.local/bin:$HOME/bin:/data/mysql_5.7.21_source/mysql/bin
+PATH=$PATH:$HOME/.local/bin:$HOME/bin
 
 export MYSQL_HOME=/data/mysql_5.7.21_source/mysql/app/mysql
 export PATH=$MYSQL_HOME/bin:$PATH
