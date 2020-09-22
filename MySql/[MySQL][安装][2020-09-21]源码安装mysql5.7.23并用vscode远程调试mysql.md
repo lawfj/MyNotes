@@ -105,7 +105,7 @@ id: mysql: no such user
 切换到mysql用户下：su - mysql
 
 vi .bash_profile
-在PATH=HOME/bib:后面添加mysql bin目录。
+在PATH=HOME/bib:后面添加mysql bin目录，及配置环境变量。
 ```
 # .bash_profile
 
@@ -115,6 +115,8 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # User specific environment and startup programs
+
+
 
 PATH=$PATH:$HOME/.local/bin:$HOME/bin:/data/mysql_5.7.21_source/mysql/bin
 
@@ -392,8 +394,10 @@ mysqladmin -uroot -p旧密码 password 新密码
 ```
 ### 配置成服务
 1、添加mysql系统启动脚本
-``
-
+```
+cp -p support-files/mysql.server /etc/init.d/mysqld
+/etc/init.d/mysqld start
+```
 # vs code配置
 ## 远程机器
 1、按照上述步骤进行MySQL源码编译安装，记得加-DWITH_DEBUG参数
