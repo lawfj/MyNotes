@@ -384,10 +384,10 @@ tmpdir=/data/mysql_5.7.21_source/mysql/tmp
 ```
 #两种方式任选一种
 #1）不生成root密码
-mysqld --initialize-insecure --user=mysql --basedir=/data/mysql_5.7.21_source/mysql/app/mysql --datadir=/data/mysql_5.7.21_source/mysql/data --defaults-file=/data/mysql_5.7.21_source/mysql/app/mysql/my.cnf
+mysqld --defaults-file=/data/mysql_5.7.21_source/mysql/app/mysql/my.cnf --initialize-insecure --user=mysql --basedir=/data/mysql_5.7.21_source/mysql/app/mysql --datadir=/data/mysql_5.7.21_source/mysql/data
 
 #2）生成root随机密码，在/data/mysql/mysql-error.log文件中 
-mysqld --initialize --user=mysql --basedir=/data/mysql_5.7.21_source/mysql/app/mysql --datadir=/data/mysql_5.7.21_source/mysql/data --defaults-file=/data/mysql_5.7.21_source/mysql/app/mysql/my.cnf
+mysqld --defaults-file=/data/mysql_5.7.21_source/mysql/app/mysql/my.cnf --initialize --user=mysql --basedir=/data/mysql_5.7.21_source/mysql/app/mysql --datadir=/data/mysql_5.7.21_source/mysql/data
 
 注意：此条语句执行时容易报错，成功至少要满足以下几个条件
 1. /data/mysql_5.7.21_source/mysql/data目录存在并且一定要为空目录，否则报错；
