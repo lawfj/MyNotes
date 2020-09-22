@@ -164,7 +164,7 @@ https://dev.mysql.com/doc/refman/5.7/en/source-configuration-options.html#cmake-
 在mysql源代码目录下执行
 注：-DWITH_DEBUG参数一定不能忘！调试用
 cmake \
--DCMAKE_INSTALL_PREFIX=/data/mysql_5.7.21_source/mysql \
+-DCMAKE_INSTALL_PREFIX=/data/mysql_5.7.21_source/mysql/app \
 -DMYSQL_DATADIR=/data/mysql_5.7.21_source/mysql/data \
 -DDEFAULT_CHARSET=utf8mb4 \
 -DDEFAULT_COLLATION=utf8mb4_general_ci \
@@ -180,7 +180,7 @@ cmake \
 -DWITH_MEMORY_STORAGE_ENGINE=1 \
 -DMYSQL_UNIX_ADDR=/data/mysql_5.7.21_source/mysql/data/mysql.sock \
 -DMYSQL_TCP_PORT=3306 \
--DSYSCONFDIR=/data/mysql_5.7.21_source/mysql \
+-DSYSCONFDIR=/data/mysql_5.7.21_source/mysql/app \
 -DMYSQL_USER=mysql \
 -DENABLE_DOWNLOADS=1 \
 -DWITH_BOOST=/data/mysql_5.7.21_source/mysql/boost \
