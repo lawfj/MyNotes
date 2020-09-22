@@ -243,7 +243,7 @@ sudo swapon /swapfile
 ```
 ## 初始化MySQL
 ### my.cnf配置
-在/data/mysql_5.7.21_source/mysql目录下创建my.cnf文件，并写入下面配置内容
+在/data/mysql_5.7.21_source/mysql/app目录下创建my.cnf文件，并写入下面配置内容
 ```
 [client]
 port=3306
@@ -258,7 +258,7 @@ general_log=off
 explicit_defaults_for_timestamp=true
 
 # system
-basedir=/data/mysql_5.7.21_source/mysql/
+basedir=/data/mysql_5.7.21_source/mysql/app
 datadir=/data/mysql_5.7.21_source/mysql/data/
 open_files_limit=10240
 # 控制mysql接收数据包的大小，主从应该保证一致
