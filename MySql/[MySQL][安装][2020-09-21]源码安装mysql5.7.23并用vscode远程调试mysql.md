@@ -294,7 +294,7 @@ sync_binlog=1
 
 # logging
 log_error=/data/mysql_5.7.21_source/mysql/data/mysql.err
-slow_query_log_file=/data/mysql_5.7.21_source/mysql/log/slow.log
+slow_query_log_file=/data/mysql_5.7.21_source/mysql/log/slow_queries.log
 log_queries_not_using_indexes=0
 slow_query_log=1
 log_slave_updates=ON
@@ -302,7 +302,7 @@ log_slow_admin_statements=1
 long_query_time=1
 
 # relay
-relay_log=/data/mysql_5.7.21_source/mysql/log/relay_log/relay-bin
+relay_log=/data/mysql_5.7.21_source/mysql/log/relay_log/mysql-relay
 relay_log_index=/data/mysql_5.7.21_source/mysql/log/relay_log/relay.index
 relay_log_info_file=/data/mysql_5.7.21_source/mysql/log/relay_log/relay-log.info
 
