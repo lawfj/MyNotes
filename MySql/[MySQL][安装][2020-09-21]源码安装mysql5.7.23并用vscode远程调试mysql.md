@@ -302,9 +302,9 @@ log_slow_admin_statements=1
 long_query_time=1
 
 # relay
-relay_log=/data/mysql_5.7.21_source/mysql/log/relay_log
-relay_log_index=/data/mysql_5.7.21_source/mysql/log/relay.index
-relay_log_info_file=/data/mysql_5.7.21_source/mysql/log/relay-log.info
+relay_log=/data/mysql_5.7.21_source/mysql/log/relay_log/relay-bin
+relay_log_index=/data/mysql_5.7.21_source/mysql/log/relay_log/relay.index
+relay_log_info_file=/data/mysql_5.7.21_source/mysql/log/relay_log/relay-log.info
 
 # slave 
 slave_load_tmpdir=/data/mysql_5.7.21_source/mysql/tmp
@@ -352,7 +352,7 @@ quick
 sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES
 
 [mysqld_safe]
-basedir=/data/mysql_5.7.21_source/mysql
+basedir=/data/mysql_5.7.21_source/mysql/app
 datadir=/data/mysql_5.7.21_source/mysql/data
 pid_file=/data/mysql_5.7.21_source/mysql/data/mysqld.pid
 tmpdir=/data/mysql_5.7.21_source/mysql/tmp
