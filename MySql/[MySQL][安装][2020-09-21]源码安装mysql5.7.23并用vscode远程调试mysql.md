@@ -220,7 +220,7 @@ Linking CXX executable my_safe_process
 [root@localhost mysql-5.7.21]# 
 
 ```
-make报错：
+注：make报错：
 ```
 [ 47%] Building CXX object sql/CMakeFiles/sql.dir/aggregate_check.cc.o
 [ 47%] Building CXX object sql/CMakeFiles/sql.dir/geometry_rtree.cc.o
