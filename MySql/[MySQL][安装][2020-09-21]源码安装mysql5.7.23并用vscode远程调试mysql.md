@@ -116,11 +116,11 @@ fi
 
 # User specific environment and startup programs
 
-
-
 PATH=$PATH:$HOME/.local/bin:$HOME/bin:/data/mysql_5.7.21_source/mysql/bin
 
 export PATH
+export MYSQL_HOME=/data/mysql_5.7.21_source/mysql/app/mysql
+export
 ```
 /data/mysql_5.7.21_source/mysql/bin是我的mysql bin目录
 保存退出，执行source .bash_profile,加载bash_profile
