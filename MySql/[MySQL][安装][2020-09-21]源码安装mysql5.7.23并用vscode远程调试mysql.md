@@ -125,7 +125,7 @@ export PATH
 6、创建目录并授权
 ```
 使用root用户执行以下命令：
-mkdir -p /data/mysql_5.7.21_source/mysql
+mkdir -p /data/mysql_5.7.21_source/mysql/app
 mkdir -p /data/mysql_5.7.21_source/mysql/data
 mkdir -p /data/mysql_5.7.21_source/mysql/tmp
 mkdir -p /data/mysql_5.7.21_source/mysql/log/innodb_log
