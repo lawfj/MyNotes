@@ -438,7 +438,10 @@ systemctl start mysql.server
 ps -ef | grep mysql
 ```
 有mysql服务则启动成功
-
+5. 设置开机自动开启
+```
+chkconfig mysql.E on
+```
 6. 添加到linux服务器开机自启动
 systemctl enable mysql.server
 # vs code配置
