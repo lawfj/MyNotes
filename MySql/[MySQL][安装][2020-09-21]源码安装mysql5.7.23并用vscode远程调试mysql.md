@@ -422,7 +422,7 @@ update mysql.user set host='%' where user='root';
 ### 配置成服务
 1、添加mysql系统启动脚本
 ```
-cp -p support-files/mysql.server /etc/init.d/
+cp -p /data/mysql_5.7.21_source/mysql/app/mysql/support-files/mysql.server /etc/init.d/
 ```
 2、添加mysql.server到服务中
 ```
