@@ -352,7 +352,7 @@ quick
 sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES
 
 [mysqld_safe]
-basedir=/data/mysql_5.7.21_source/mysql/app
+basedir=/data/mysql_5.7.21_source/mysql/app/mysql
 datadir=/data/mysql_5.7.21_source/mysql/data
 pid_file=/data/mysql_5.7.21_source/mysql/data/mysqld.pid
 tmpdir=/data/mysql_5.7.21_source/mysql/tmp
