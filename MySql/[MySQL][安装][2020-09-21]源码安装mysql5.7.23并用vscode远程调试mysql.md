@@ -301,6 +301,11 @@ log_slave_updates=ON
 log_slow_admin_statements=1
 long_query_time=1
 log_bin=/data/mysql_5.7.21_source/mysql/log/bin_log/mysql-bin
+binlog_cache_size=1M
+binlog_format=ROW
+binlog_gtid_simple_recovery=1
+binlog_rows_query_log_events=1
+
 
 # relay
 relay_log=/data/mysql_5.7.21_source/mysql/log/relay_log/mysql-relay
