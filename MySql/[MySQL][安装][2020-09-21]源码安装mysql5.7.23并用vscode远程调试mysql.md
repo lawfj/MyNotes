@@ -410,9 +410,12 @@ mysql    19141 16349  0 17:10 pts/2    00:00:00 grep --color=auto mysqld
 mysql -uroot -p
 #修改密码
 1)法一
-set password for root@'%'='密码';
+set password for root='密码';
 2)法二
 mysqladmin -uroot -p旧密码 password 新密码
+3)法三
+alter user test identified by '123456';
+注，上面的方法
 ```
 ### 配置成服务
 1、添加mysql系统启动脚本
