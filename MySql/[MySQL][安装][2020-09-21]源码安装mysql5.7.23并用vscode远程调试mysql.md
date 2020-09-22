@@ -364,6 +364,22 @@ pid_file=/data/mysql_5.7.21_source/mysql/data/mysqld.pid
 tmpdir=/data/mysql_5.7.21_source/mysql/tmp
 ```
 ### 初始化MySQL及用户密码
+```
+#两种方式任选一种
+#1）不生成root密码
+./mysqld --initialize-insecure --user=mysql --basedir=/data/mysql_5.7.21_source/mysql/app --datadir=/data/mysql_5.7.21_source/mysql/data --default-files=/data/mysql_5.7.21_source/mysql/my.cnf
+
+#2）生成root随机密码，在/data/mysql/mysql-error.log文件中 
+./mysqld --initialize --user=mysql --basedir=/data/mysql_5.7.21_source/mysql/app --datadir=/data/mysql_5.7.21_source/mysql/data --default-files=/data/mysql_5.7.21_source/mysql/my.cnf
+
+注意：此条语句执行时容易报错，成功至少要满足以下几个条件
+1. /u01/my3306/mysql/data目录存在并且一定要为空目录，否则报错；
+2. 如果本机已经存在了其余的mysql，请确实/etc/my.cnf文件不存在，否则会按照/etc/my.cnf中的设置进行初始化，datadir会读取另一个mysql实例的路径，从而导致报错。遇到此情况，可以先将已经存在的mysql实例停止，然后将/etc/my.cnf文件剪切到此实例对应的datadir目录中，再启动此实例，然后重新执行初始化命令；
+```
+### 启动MySQL
+
+
+### 配置成服务
 
 # vs code配置
 ## 远程机器
