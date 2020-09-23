@@ -477,3 +477,69 @@ yum install gdb-gdbserver
 ![title](https://raw.githubusercontent.com/lawfj/MyNotesPic/master/MyNotes/2020/09/22/1600785873384-1600785873387.png)
 ### 安装插件
 C/C++ IntelliSense, debugging, and code browsing
+有些扩展是要安装在 SSH 的目标机器上, 安装时会提示你  install on SSH: xxxx, 而主题类扩展和一部分功能类扩展是安装在本地机器上
+![title](https://raw.githubusercontent.com/lawfj/MyNotesPic/master/MyNotes/2020/09/22/1600786023047-1600786023049.png)
+![title](https://raw.githubusercontent.com/lawfj/MyNotesPic/master/MyNotes/2020/09/22/1600786468705-1600786468714.png)
+![title](https://raw.githubusercontent.com/lawfj/MyNotesPic/master/MyNotes/2020/09/22/1600786599227-1600786599233.png)
+### 远程服务器开启mysql
+通过gdbserver开启mysql
+```
+gdbserver localhost:2333 /data/mysql_5.7.21_source/mysql/app/mysql/bin/mysqld --basedir=/data/mysql_5.7.21_source/mysql/app/mysql --datadir=/data/mysql_5.7.21_source/mysql/data --plugin-dir=/data/mysql_5.7.21_source/mysql/app/mysql/lib/plugin --user=mysql --log-error=/data/mysql_5.7.21_source/mysql/data/mysql.err --open-files-limit=5000 --pid-file=/data/mysql_5.7.21_source/mysql/data//localhost.localdomain.pid --socket=/data/mysql_5.7.21_source/mysql/data/mysql.sock --port=3306
+```
+### 创建配置文件
+选择c++(GDB/LLDB)，会在左边窗口新建launch.json，将其修改为下面的代码
+![title](https://raw.githubusercontent.com/lawfj/MyNotesPic/master/MyNotes/2020/09/22/1600788277604-1600788277606.png)
+```
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/data/mysql_5.7.21_source/mysql/app/mysql/bin/mysqld",
+            "stopAtEntry": false,
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb",
+            "miDebuggerArgs": "gdb",
+            "linux": {
+                "MIMode": "gdb",
+                "miDebuggerPath": "/usr/bin/gdb",
+                "miDebuggerServerAddress": "192.168.56.102:2333",
+            },
+            "logging": {
+                "moduleLoad": false,
+                "engineLogging": false,
+                "trace": false
+            },
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
+```
+几个注意的地方:
+
+应该是  "request": "launch", 不是 “attach”, 此后也并不需要记录进程ID
+需要填对  "miDebuggerServerAddress": "192.168.126.128:2333", 有这个设置才会开启 gdb 远程调试
+"engineLogging": true 可以看到 gdb 自身的详细消息
+必须是  "externalConsole": false 否则报错
+/data/mysql_5.7.21_source/mysql/app/mysql/bin/mysqld 在 gdbserver 和 launch.json 里都要填一次,即mysql编译后的启动程序
+### 正式开始调试
+![title](https://raw.githubusercontent.com/lawfj/MyNotesPic/master/MyNotes/2020/09/22/1600789054554-1600789054556.png)
+添加断点，可以看到参数
+![title](https://raw.githubusercontent.com/lawfj/MyNotesPic/master/MyNotes/2020/09/23/1600791818061-1600791818063.png)
+## 调试积累
+1. 使用gdbserver启动mysql，如果vs code这边没有开始调试，mysql程序会hang在开始阶段，mysql.err的记录是还没开始启动。一旦我们开始了调试，gdbserver会打印“Remote debugging from host 192.168.56.102”，mysql正式开始启动，并可以登录了。
+2. 目前看来，是要在调试前就要打好断点，不然不起效，后续再看
